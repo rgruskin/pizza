@@ -21,7 +21,7 @@ struct ContentView: View {
                     Image(p.image)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(width: 60, height: 60)
+                        .frame(width: 96, height: 96)
                         .cornerRadius(5)
                         .clipped()
             
