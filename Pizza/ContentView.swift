@@ -15,32 +15,37 @@ struct ContentView: View {
     var body: some View {
          //Text("here again")
         
-        ScrollView {
-            ForEach(pizzaData.pizzas) { p in
-                HStack(alignment: .center) {
-                    Image(p.image)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 96, height: 96)
-                        .cornerRadius(5)
-                        .clipped()
-            
-                    VStack {
-                      Text(p.name)
-                        .fontWeight(.black)
-                       .padding(15.0)
+        NavigationView {
+            ScrollView {
+                ForEach(pizzaData.pizzas) { p in
+                    NavigationLink(
+                        destination: PizzaDetailView(pizza: p),
+                        label: {
+                            HStack {
+                                Image(p.image)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .padding(.top, 25.0)
+                                    //.padding(.left, 5.0)
+                                    .frame(width: 124, height: 124)
+                                    .cornerRadius(5)
+                                    .clipped()
+                        
+                                VStack {
+                                  Text(p.name)
+                                    .fontWeight(.black)
+                                   //.padding(15.0)
         
-    
-                     HStack {
-                        Text(p.toppings[0])
-                        Text(p.toppings[1])
-                        Text(p.toppings[2])
-                     }
-                 }
-
-                }
-          }
+                             }
+                            }
+                            
+                        })
+  
+              }
+            }
+            .navigationBarTitle("Pizza Menu")
         }
+
     }
 }
 

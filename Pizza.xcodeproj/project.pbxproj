@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C080454425E735190072D836 /* PizzaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C080454325E735190072D836 /* PizzaDetailView.swift */; };
 		C0B877CD25E5E51C003EBDD6 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = C0B877CC25E5E51C003EBDD6 /* Data.json */; };
 		C0FB776A25DB49D700B3086E /* PizzaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FB776925DB49D700B3086E /* PizzaApp.swift */; };
 		C0FB776C25DB49D700B3086E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FB776B25DB49D700B3086E /* ContentView.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C080454325E735190072D836 /* PizzaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaDetailView.swift; sourceTree = "<group>"; };
 		C0B877CC25E5E51C003EBDD6 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Data.json; path = ../../../../../../Data.json; sourceTree = "<group>"; };
 		C0FB776625DB49D700B3086E /* Pizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FB776925DB49D700B3086E /* PizzaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaApp.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				C0FB779725DB4A1F00B3086E /* PizzaData.swift */,
 				C0FB779C25DB4AD800B3086E /* PizzaModel.swift */,
 				C0FB776B25DB49D700B3086E /* ContentView.swift */,
+				C080454325E735190072D836 /* PizzaDetailView.swift */,
 			);
 			path = Pizza;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			files = (
 				C0FB779825DB4A1F00B3086E /* PizzaData.swift in Sources */,
 				C0FB776C25DB49D700B3086E /* ContentView.swift in Sources */,
+				C080454425E735190072D836 /* PizzaDetailView.swift in Sources */,
 				C0FB779D25DB4AD900B3086E /* PizzaModel.swift in Sources */,
 				C0FB776A25DB49D700B3086E /* PizzaApp.swift in Sources */,
 			);
